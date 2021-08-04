@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		DFBF481C26BAFBCA00838619 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF481B26BAFBCA00838619 /* Person.swift */; };
 		DFBF481F26BAFE9200838619 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF481E26BAFE9200838619 /* PhoneNumber.swift */; };
 		DFBF482326BB09C800838619 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF482226BB09C800838619 /* RequestViewController.swift */; };
+		DFBF482A26BB121200838619 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF482926BB121200838619 /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DFBF481B26BAFBCA00838619 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DFBF481E26BAFE9200838619 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		DFBF482226BB09C800838619 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		DFBF482926BB121200838619 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		ECF217819A885022D43E6E63 /* Pods_Lesson_30.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson_30.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,7 +64,6 @@
 				7479F4A3498399319EDCCB1B /* Pods-Lesson_30.debug.xcconfig */,
 				11DD0CA74DE4C03A26AFE533 /* Pods-Lesson_30.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,6 +94,7 @@
 				DFBF481B26BAFBCA00838619 /* Person.swift */,
 				DFBF481E26BAFE9200838619 /* PhoneNumber.swift */,
 				DFBF482226BB09C800838619 /* RequestViewController.swift */,
+				DFBF482926BB121200838619 /* KeychainManager.swift */,
 				DFBF480C26BAFAD500838619 /* Main.storyboard */,
 				DFBF480F26BAFADB00838619 /* Assets.xcassets */,
 				DFBF481126BAFADB00838619 /* LaunchScreen.storyboard */,
@@ -217,6 +219,7 @@
 			files = (
 				DFBF481F26BAFE9200838619 /* PhoneNumber.swift in Sources */,
 				DFBF480B26BAFAD500838619 /* ViewController.swift in Sources */,
+				DFBF482A26BB121200838619 /* KeychainManager.swift in Sources */,
 				DFBF482326BB09C800838619 /* RequestViewController.swift in Sources */,
 				DFBF480726BAFAD500838619 /* AppDelegate.swift in Sources */,
 				DFBF481C26BAFBCA00838619 /* Person.swift in Sources */,

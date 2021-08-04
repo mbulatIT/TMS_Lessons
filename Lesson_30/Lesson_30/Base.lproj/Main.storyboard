@@ -78,12 +78,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pR1-yd-wuH">
+                                <rect key="frame" x="20" y="364" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjI-9M-JnR">
+                                <rect key="frame" x="190" y="438" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="zfj-he-j0K" eventType="touchUpInside" id="VLp-eO-Uax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skT-W5-Fnv">
+                                <rect key="frame" x="179.5" y="508" width="55" height="30"/>
+                                <state key="normal" title="Validate"/>
+                                <connections>
+                                    <action selector="validateButtonPressed:" destination="zfj-he-j0K" eventType="touchUpInside" id="MHg-s0-8Cu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ELK-Jz-6DU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OjI-9M-JnR" firstAttribute="centerY" secondItem="ELK-Jz-6DU" secondAttribute="centerY" id="5ec-x7-Laf"/>
+                            <constraint firstItem="skT-W5-Fnv" firstAttribute="top" secondItem="OjI-9M-JnR" secondAttribute="bottom" constant="40" id="6hV-V7-cUu"/>
+                            <constraint firstItem="ELK-Jz-6DU" firstAttribute="trailing" secondItem="pR1-yd-wuH" secondAttribute="trailing" constant="20" id="8H7-ys-AbI"/>
+                            <constraint firstItem="OjI-9M-JnR" firstAttribute="centerX" secondItem="XYv-Cb-KaH" secondAttribute="centerX" id="8gw-Xj-BEw"/>
+                            <constraint firstItem="pR1-yd-wuH" firstAttribute="leading" secondItem="ELK-Jz-6DU" secondAttribute="leading" constant="20" id="Hfg-v9-6id"/>
+                            <constraint firstItem="skT-W5-Fnv" firstAttribute="centerX" secondItem="XYv-Cb-KaH" secondAttribute="centerX" id="Ujs-Af-H6d"/>
                             <constraint firstItem="AM9-bm-CLA" firstAttribute="leading" secondItem="ELK-Jz-6DU" secondAttribute="leading" constant="20" id="ZML-lz-m9v"/>
                             <constraint firstItem="ELK-Jz-6DU" firstAttribute="bottom" secondItem="AM9-bm-CLA" secondAttribute="bottom" constant="20" id="aXv-Jj-J9h"/>
+                            <constraint firstItem="OjI-9M-JnR" firstAttribute="top" secondItem="pR1-yd-wuH" secondAttribute="bottom" constant="40" id="b4v-7m-Rrb"/>
                             <constraint firstItem="ELK-Jz-6DU" firstAttribute="trailing" secondItem="AM9-bm-CLA" secondAttribute="trailing" constant="20" id="m8d-BL-zrf"/>
                             <constraint firstItem="27T-i0-pIv" firstAttribute="leading" secondItem="ELK-Jz-6DU" secondAttribute="leading" constant="20" id="mkw-t6-8hZ"/>
                             <constraint firstItem="27T-i0-pIv" firstAttribute="top" secondItem="ELK-Jz-6DU" secondAttribute="top" constant="20" id="r01-TK-Q14"/>
@@ -91,6 +117,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTextField" destination="pR1-yd-wuH" id="tMt-mo-U06"/>
                         <outlet property="requestStatusLabel" destination="27T-i0-pIv" id="qTK-xv-a9R"/>
                     </connections>
                 </viewController>

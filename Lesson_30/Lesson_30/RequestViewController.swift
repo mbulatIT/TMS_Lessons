@@ -10,6 +10,9 @@ import UIKit
 class RequestViewController: UIViewController {
 
     @IBOutlet weak var requestStatusLabel: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     
     deinit {
         print("Request controller deinit")
@@ -22,9 +25,9 @@ class RequestViewController: UIViewController {
     
     func makeRequest() {
         let url = URL(string: "https://google.com")!
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                self.processData()
+                self?.processData()
             }
         }.resume()
         requestStatusLabel.text = "Request sent"
@@ -32,6 +35,24 @@ class RequestViewController: UIViewController {
     
     func processData() {
         requestStatusLabel.text = "Request completed"
+    }
+
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        if let password = passwordTextField.text,
+           password.isEmpty == false {
+            KeychainManager.shared.savePassword(password)
+        }
+    }
+
+    @IBAction func validateButtonPressed(_ sender: Any) {
+        if let password = passwordTextField.text,
+           password.isEmpty == false {
+            if KeychainManager.shared.validatePassword(password) {
+                requestStatusLabel.text = "Validation pass"
+            } else {
+                requestStatusLabel.text = "Validation failed"
+            }
+        }
     }
 
     @IBAction func dismissButtonPressed(_ sender: Any) {
