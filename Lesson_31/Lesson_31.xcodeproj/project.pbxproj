@@ -13,6 +13,7 @@
 		DFD26F3326C19A54006ACF31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD26F3126C19A54006ACF31 /* Main.storyboard */; };
 		DFD26F3526C19A56006ACF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD26F3426C19A56006ACF31 /* Assets.xcassets */; };
 		DFD26F3826C19A56006ACF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD26F3626C19A56006ACF31 /* LaunchScreen.storyboard */; };
+		DFD26F4126C1AB86006ACF31 /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD26F4026C1AB86006ACF31 /* PushNotificationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DFD26F3426C19A56006ACF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFD26F3726C19A56006ACF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFD26F3926C19A56006ACF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD26F4026C1AB86006ACF31 /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DFD26F2D26C19A54006ACF31 /* SceneDelegate.swift */,
 				DFD26F2F26C19A54006ACF31 /* ViewController.swift */,
 				DFD26F3126C19A54006ACF31 /* Main.storyboard */,
+				DFD26F4026C1AB86006ACF31 /* PushNotificationsViewController.swift */,
 				DFD26F3426C19A56006ACF31 /* Assets.xcassets */,
 				DFD26F3626C19A56006ACF31 /* LaunchScreen.storyboard */,
 				DFD26F3926C19A56006ACF31 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD26F3026C19A54006ACF31 /* ViewController.swift in Sources */,
+				DFD26F4126C1AB86006ACF31 /* PushNotificationsViewController.swift in Sources */,
 				DFD26F2C26C19A54006ACF31 /* AppDelegate.swift in Sources */,
 				DFD26F2E26C19A54006ACF31 /* SceneDelegate.swift in Sources */,
 			);
